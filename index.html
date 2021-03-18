@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>WEB222 Store</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER AREA -->
+    <header id="headerDiv">
+      <div id="topOpt1">
+        <a href="#">Log In</a>
+        <a href="#">Sign Up</a>
+        <a href="./contactUs.html" id="contactUs">Contact Us</a>
+        <a href="#" id="aboutUs">About Us</a>
+      </div>
+
+      <a href="#" id="home"
+        ><h1 id="headerH1"><i class="fas fa-kaaba"></i> ISLAMIC HUB</h1></a
+      >
+    </header>
+
+    <!-- CATEGORIES BUTTON AREA -->
+    <nav id="nav">
+      <div>
+        <button type="button" id="a_cat00" class="btn btn-secondary btn-lg">Home</button>
+      </div>
+      <div id="navDiv">
+        <button type="button" id="a_cat01" class="btn btn-primary btn-lg">Quran And Hadith</button>
+        <button type="button" id="a_cat02" class="btn btn-primary btn-lg">Islamic Ethics</button>
+        <button type="button" id="a_cat03" class="btn btn-primary btn-lg">14 Infalliables</button>
+        <button type="button" id="a_cat04" class="btn btn-primary btn-lg">Kids Section</button>
+        <button type="button" id="a_cat05" class="btn btn-primary btn-lg">General</button>
+      </div>
+      <div>
+        <button type="button" id="a_cat06" class="btn btn-secondary btn-lg">
+          Check-Out -- Item: <span id="itemValue"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div id="hidden">
+      <div class="container-fluid" id="slider">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/sliders/LogoMakr_9fA4ZT.png" alt="Logo" width="550" height="200" />
+              <div class="carousel-caption"></div>
+            </div>
+
+            <div class="item">
+              <img src="img/sliders/tree2.jpeg" alt="Logo" width="500" height="200" />
+              <div class="carousel-caption"></div>
+            </div>
+
+            <div class="item">
+              <img src="img/sliders/tree3.jpeg" alt="Logo" width="500" height="200" />
+              <div class="carousel-caption"></div>
+            </div>
+
+            <div class="item">
+              <img src="img/sliders/images10.jpg" alt="Logo" width="700" height="200" />
+              <div class="carousel-caption"></div>
+            </div>
+
+            <div class="item">
+              <img src="img/sliders/Ali.jpg" alt="Logo" width="700" height="300" />
+              <div class="carousel-caption"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Us -->
+    <div id="aboutUsDiv_1">
+      <h1>Islamic Hub <i class="fas fa-kaaba"></i></h1>
+      <h3>
+        <img src="img/Ali.jpg" alt="Islamic Picture" />Islamic Hub only purpose is to serve Imam of
+        our time<b> Sahibe Asr was Zamaan (a.s)</b>. <br />
+        Prophet Muhammad (s.a.w.a.w) said <i>"Acquiring Knowledge is obligatory on every Muslim"</i
+        ><br />
+        Thus striving for knowledge of Deen-e-Islam is obligatory for every Muslim. <br />Islamic
+        Hub offers our clients with variety of books ranging from History of Islam to Ahqam e Deen,
+        from Akhlaq to Philosophy of Islam, from Quranic Sciences to Arabic grammer, from hadiths to
+        Tafaseer of Quran. Islamic Hub also have separate section for Kids, where your kids can find
+        beautifully illustrated books with inspiring message of Islam. <br /><br />Our aim is to do
+        our little for <b>Imam Mahdi (a.s)</b>. <br />To your loudest Salawat.
+      </h3>
+    </div>
+
+    <!-- CATEGORY 01 -->
+
+    <div id="catDiv01" class="container">
+      <div class="row">
+        <div id="catDiv01_item01" class="col-md-4 catDiv_item">
+          <div>
+            <div>
+              <img src="img/Categories/cat_01/cat_01_img_01.png" alt="Book Title Page" />
+            </div>
+
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">Usool Al Kafi</h3>
+                <h4><i class="fas fa-user-edit"></i> Muhammad ibn Ya‘qūb al-Kulaynī</h4>
+                <p>Publisher: Ahlulbayt Publishers</p>
+                <p>CAD $<span>115</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- Usool Al Kafi is the most popular and oldest hadith book of Twelver
+                  Shia-Hadiths compiled by Muhammad ibn Yaqub al-Kulayni. It has total 16199
+                  narrations.Usul al Kafi which had hadiths focussing on history, ethics,
+                  supplications and Quran.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_01_Butt_01a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_01_Butt_01b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="catDiv01_item02" class="col-md-4 catDiv_item">
+          <div>
+            <img src="img/Categories/cat_01/cat_01_img_02.png" alt="Book Title Page" />
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">Lights on Muhammadan Sunnah</h3>
+                <h4><i class="fas fa-user-edit"></i> Mahmud Abu Rayyah</h4>
+                <p>Publisher: Ansariyan Publications - Qum</p>
+                <p>CAD $<span>15</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- Islamic History has witnessed lots of fabrication and false
+                  narrators. This book is an attempt to evaluate who was truthful and who got
+                  diverted.What is real and what is fake. The book discusses personality of famous
+                  narrators and their life events.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_01_Butt_02a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_01_Butt_02b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="catDiv01_item03" class="col-md-4 catDiv_item">
+          <div>
+            <img src="img/Categories/cat_01/cat_01_img_03.png" alt="Book Title Page" />
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">As-Sahifa Al-Kamilah</h3>
+                <h4><i class="fas fa-user-edit"></i> Imam Ali Zaynul Abidin(a.s)</h4>
+                <p>Publisher: Muhammadi Trust of Great Britain</p>
+                <p>CAD $<span>15</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- Sahifa Al Sajjadiya is the collection of most beautiful supplication
+                  by 4th imam of Shias and the prophet(sawaw) grandson Imam Zain Ul Abideen a.s. It
+                  has Supplication from prayers for parents to Prayers for children,increasing
+                  sustenance to long life.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_01_Butt_03a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_01_Butt_03b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="catDiv01_item04" class="col-md-4 catDiv_item">
+          <div>
+            <img src="img/Categories/cat_01/cat_01_img_04.png" alt="Book Title Page" />
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">Nahjul Balagha</h3>
+                <h4><i class="fas fa-user-edit"></i> Allamah Sharif Razi</h4>
+                <p>Publisher: Meraj Publications.</p>
+                <p>CAD $<span>14</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- Nahjul Balagha is collection of sermons, letter and sayings of
+                  Commander of Faithful Imam Ali ibn Abi Talib a.s covering every aspect of human
+                  life, relationships, nature, science, philosophy of living, ethics etc.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_01_Butt_04a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_01_Butt_04b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="catDiv01_item05" class="col-md-4 catDiv_item">
+          <div>
+            <img src="img/Categories/cat_01/cat_01_img_05.png" alt="Book Title Page" />
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">Bihar ul Anwar</h3>
+                <h4><i class="fas fa-user-edit"></i> Allama Muhammad Baqir Majlesi (R.A)</h4>
+                <p>Publisher: Mehfoos Book Agency</p>
+                <p>CAD $<span>35</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- Bihar ul Anwar is the shia hadith compilation by famous shia scholar
+                  Mohammad Baqir Majlisi.It is collection of Hadiths, tafaseer on quranic verses,
+                  historical events. This translated version comprises of 12 volumes.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_01_Butt_05a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_01_Butt_05b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="catDiv01_item06" class="col-md-4 catDiv_item">
+          <div>
+            <img src="img/Categories/cat_01/cat_01_img_06.png" alt="Book Title Page" />
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">Commentary on Suratul Jinn</h3>
+                <h4><i class="fas fa-user-edit"></i> Naser Makarem Shirazi</h4>
+                <p>Publisher: Islamic Humanitarian Service (IHS)</p>
+                <p>CAD $<span>16</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- In this book Author give detail commentary about Surah Jinn. This
+                  includes traditions in details related to Suratul Jinn , rightly guided and
+                  diverted Jinns and their belied in Prophet Muhammad and Day of Judgement.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_01_Butt_06a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_01_Butt_06b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CATEGORY 02 -->
+    <div id="catDiv02" class="container">
+      <div class="row ">
+        <div id="catDiv02_item01" class="col-md-4 catDiv_item">
+          <div>
+            <div>
+              <img src="img/Categories/cat_02/cat_02_img_01.png" alt="Book Title Page" />
+            </div>
+
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">Islamic Ethics</h3>
+                <h4><i class="fas fa-user-edit"></i> Sayyid Husayn Dastaghaib Shirazi.</h4>
+                <p>Publisher: Ahlulbayt Publishers</p>
+                <p>CAD $<span>15</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- This is the book written by Sayyid 'Abd al-Hussayn Dastaghaib Shirazi
+                  and is one of the great book covering significance of Ethics in Islam. And cover
+                  topics like anger,lust,envy,arrogance etc and how a person purify oneself with
+                  good Akhlaq.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_02_Butt_01a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_02_Butt_01b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="catDiv02_item02" class="col-md-4 catDiv_item">
+          <div>
+            <div>
+              <img src="img/Categories/cat_02/cat_02_img_02.png" alt="Book Title Page" />
+            </div>
+
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">The Greatest Jihad</h3>
+                <h4><i class="fas fa-user-edit"></i> Sayyid Ruhulla Musawi Khomeini</h4>
+                <p>Publisher: Ahlulbayt Publishers</p>
+                <p>CAD $<span>25</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- This book describes how great personalities become great by
+                  combatting their nafs and why Allah has called greatest Jihad to be fighting
+                  against one own self. It pivotal for religious students and focusses on devotion,
+                  faith and knowledge.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_02_Butt_02a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_02_Butt_02b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="catDiv02_item03" class="col-md-4 catDiv_item">
+          <div>
+            <div>
+              <img src="img/Categories/cat_02/cat_02_img_03.png" alt="Book Title Page" />
+            </div>
+
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">Akhlaq al-Aimma</h3>
+                <h4><i class="fas fa-user-edit"></i> Maulana Sayyid Zafar Hasan Amrohi</h4>
+                <p>Publisher: Ansariyan Publications- Qom</p>
+                <p>CAD $<span>35</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- This book is an amazing compilation of perfect morals of fourteen
+                  purest infalliables.It mentiones examples and events from life of Imams and
+                  Masumeen a.s about their emmence knowledge, piety, mercy, wisdom, intellect,
+                  ettiquetes, justice.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_02_Butt_03a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_02_Butt_03b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="catDiv02_item04" class="col-md-4 catDiv_item">
+          <div>
+            <div>
+              <img src="img/Categories/cat_02/cat_02_img_04.png" alt="Book Title Page" />
+            </div>
+
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">Commentary:Surah al-Hujurat</h3>
+                <h4><i class="fas fa-user-edit"></i> Jafar Subhani</h4>
+                <p>Publisher: Islamic Humanitarian Service (IHS)</p>
+                <p>CAD $<span>20</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- Ayatollah Jafar Subhani beautifully eloborates on the ethical
+                  importance and perspective of Surah Hujurat of Quran and how this surah is
+                  solution for ethical problems of society. Ethics is essential to Islam as religion
+                  and to Muslim as followers.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_02_Butt_04a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_02_Butt_04b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="catDiv02_item05" class="col-md-4 catDiv_item">
+          <div>
+            <div>
+              <img src="img/Categories/cat_02/cat_02_img_05.png" alt="Book Title Page" />
+            </div>
+
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">Indicators of Piety</h3>
+                <h4><i class="fas fa-user-edit"></i> Mohammad Ali Shomali</h4>
+                <p>Publisher: Ahlul Bayt World Assemby</p>
+                <p>CAD $<span>65</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- Allah is Rehmaan and Raheem and he wants his followers to adopt this
+                  very nature of piety and merciful.This is the series that discusses importance of
+                  Piety in Quran, life of 14 infalliables, prophets and how we can inspire from them
+                  to adopt it in our lives.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_02_Butt_05a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_02_Butt_05b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="catDiv02_item06" class="col-md-4 catDiv_item">
+          <div>
+            <div>
+              <img src="img/Categories/cat_02/cat_02_img_06.png" alt="Book Title Page" />
+            </div>
+
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">Gheeba Rulings</h3>
+                <h4><i class="fas fa-user-edit"></i> Sheikh Taqi Ad-Din Ibrahimi</h4>
+                <p>Publisher: Ansariyan Publications Qom</p>
+                <p>CAD $<span>15</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- Backbiting is a great society is facing today. This book is pivotal
+                  to this very topic of Backbiting in the light of Holy Quran, Hadith and life
+                  incidences of 14 infalliables.Its give tremendous hadith of abstaining from
+                  Gheebah and rulings in details.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_02_Butt_06a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_02_Butt_06b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CATEGORY 03 -->
+    <div id="catDiv03" class="container">
+      <div class="row">
+        <div id="catDiv03_item01" class="col-md-4 catDiv_item">
+          <div>
+            <img src="img/Categories/cat_03/cat_03_img_01.png" alt="Book Title Page" />
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">Understanding Karbala</h3>
+                <h4><i class="fas fa-user-edit"></i> Sayyid Sa'eed Akhtar Rizvi</h4>
+                <p>Publisher:Ansariyan Publications - Qum</p>
+                <p>CAD $<span>45</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- This book is collection of Articles and radio speeches collected and
+                  written by author in this book. Its a detail description of history of Ummayyads
+                  their evil deeds, confiscation of Medina and Islamic state, and tragedy of
+                  Karbala.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_03_Butt_01a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_03_Butt_01b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="catDiv03_item02" class="col-md-4 catDiv_item">
+          <div>
+            <img src="img/Categories/cat_03/cat_03_img_02.png" alt="Book Title Page" />
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">Life of Muhammad SAWAW</h3>
+                <h4><i class="fas fa-user-edit"></i> Ayatollah Muhammad Baqar Al Qurashi</h4>
+                <p>Publisher: Ahlulbayt Publishers</p>
+                <p>CAD $<span>14</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- This is the 1st part of series of Biography of 14 Infalliables. In
+                  this Book Author give detail description of life of Prophet Muhammad's life,
+                  before birth to his demise. It discusses historical events from life of Mohammad
+                  peace be upon him and his family.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_03_Butt_02a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_03_Butt_02b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="catDiv03_item03" class="col-md-4 catDiv_item">
+          <div>
+            <img src="img/Categories/cat_03/cat_03_img_03.png" alt="Book Title Page" />
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">Fatima is Fatima</h3>
+                <h4><i class="fas fa-user-edit"></i> Ali Shariati</h4>
+                <p>Publisher: The Shariati Foundation</p>
+                <p>CAD $<span>12</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- Account of life of Fatima tus Zahra the daughter of Prophet of Islam
+                  and the leader of all the women of Paradise. Her intellect, her status, her
+                  struggle, her patience, her virtues are being discussed in detail.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_03_Butt_03a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_03_Butt_03b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="catDiv03_item04" class="col-md-4 catDiv_item">
+          <div>
+            <img src="img/Categories/cat_03/cat_03_img_04.png" alt="Book Title Page" />
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">Imam ar-Ridha</h3>
+                <h4><i class="fas fa-user-edit"></i> Muhammad Jawad Fadhlallah</h4>
+                <p>Publisher: Ahlulbayt Publishers</p>
+                <p>CAD $<span>15</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- This book describes the life of 8th Imam, Imam Al Ridha a.s.Orginally
+                  written in Arabic this book is translated by Yasin T.Jibouri. Lineade, birth,
+                  demise, offspring, migrations, his knowledge, his virtues , his life during the
+                  reign of Mamun Al Rashid is analysed .
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_03_Butt_04a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_03_Butt_04b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="catDiv03_item05" class="col-md-4 catDiv_item">
+          <div>
+            <img src="img/Categories/cat_03/cat_03_img_05.png" alt="Book Title Page" />
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">Life of Ali ibn Abi Talib a.s</h3>
+                <h4><i class="fas fa-user-edit"></i> Ayatollah Muhammad Baqar Al Qurashi</h4>
+                <p>Publisher: Ahlulbayt Publishers</p>
+                <p>CAD $<span>33</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description-In this Book Author give detail description of life of Imam Ali,
+                  before birth to his demise. It discusses historical events from life of Ali peace
+                  be upon him and his family, his sacrifices for deen e islam, his marriages,
+                  progeny and Quranic Verses.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_03_Butt_05a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_03_Butt_05b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="catDiv03_item06" class="col-md-4 catDiv_item">
+          <div>
+            <img src="img/Categories/cat_03/cat_03_img_06.png" alt="Book Title Page" />
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">Life of Imam Hasan a.s</h3>
+                <h4><i class="fas fa-user-edit"></i> Ayatollah Muhammad Baqar Al Qurashi</h4>
+                <p>Publisher: Ahlulbayt Publishers</p>
+                <p>CAD $<span>16</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description-In this Book Author give detail description of life of Imam Hassan,
+                  before birth to his demise. It discusses historical events from life of Hassan
+                  peace be upon him and his family, his sacrifices for deen e islam, his marriages,
+                  progeny and Quranic Verses.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_03_Butt_06a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_03_Butt_06b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CATEGORY 04 -->
+    <div id="catDiv04" class="container">
+      <div class="row">
+        <div id="catDiv04_item01" class="col-md-4 catDiv_item">
+          <div>
+            <img src="img/Categories/cat_04/cat_04_img_01.png" alt="Book Title Page" />
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">The Thirst of Sakina (s.a)</h3>
+                <h4><i class="fas fa-user-edit"></i> Zahra Trust</h4>
+                <p>Publisher:Kisa publication</p>
+                <p>CAD $<span>15</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- Children book describing thirst and sacrifice of Bibi Sakina in
+                  Karbala. The book has beautiful illustrations by orphans of Syria. Bibi Sakina and
+                  her Thirst in karbala teaches great lessons to children.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_04_Butt_01a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_04_Butt_01b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="catDiv04_item02" class="col-md-4 catDiv_item">
+          <div>
+            <img src="img/Categories/cat_04/cat_04_img_02.png" alt="Book Title Page" />
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">Hakima and Hadi Pray Salaah!</h3>
+                <h4><i class="fas fa-user-edit"></i> Moulana Nabi R.Mir</h4>
+                <p>Publisher: Kisa Publications</p>
+                <p>CAD $<span>15</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- This Children book inspire them to adopt Salah individually and in
+                  family. Book emphasises on how important it is for children to be prepared for
+                  salah, learn it and get inspired to pray along with their family. Beautiful
+                  illustrations of wudhu, namaz, and jamaat.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_04_Butt_02a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_04_Butt_02b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="catDiv04_item03" class="col-md-4 catDiv_item">
+          <div>
+            <img src="img/Categories/cat_04/cat_04_img_03.png" alt="Book Title Page" />
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">The Brave Defender(IMAM ALI)</h3>
+                <h4><i class="fas fa-user-edit"></i> Molana Nabi R.Mir</h4>
+                <p>Publisher: Kisa Publication</p>
+                <p>CAD $<span>7</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- Children book mentioning an important incident when Ali ibn Abi Talib
+                  a.s defended Prophet from children of Makkah. Imam Ali was a great supporter of
+                  prophet Muhammad sawaw right from childhood. His bravery and love is admirable.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_04_Butt_03a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_04_Butt_03b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="catDiv04_item04" class="col-md-4 catDiv_item">
+          <div>
+            <img src="img/Categories/cat_04/cat_04_img_04.png" alt="Book Title Page" />
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">The Cheerful Boy(Imam Sadiq)</h3>
+                <h4><i class="fas fa-user-edit"></i> Molana Nabi R.Mir</h4>
+                <p>Publisher: Kisa Publication</p>
+                <p>CAD $<span>15</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- Children book mentioning virtues of Imam Jafer As Sadiq a.s. The 6th
+                  Imam this is one of 12 books of series The virtues of Masummen a.s. Children learn
+                  about these beautiful stories about Islam and Imams.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_04_Butt_04a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_04_Butt_04b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="catDiv04_item05" class="col-md-4 catDiv_item">
+          <div>
+            <img src="img/Categories/cat_04/cat_04_img_05.png" alt="Book Title Page" />
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">Why She was Named Fatimah?</h3>
+                <h4><i class="fas fa-user-edit"></i> Molana Nabi R.Mir</h4>
+                <p>Publisher: Kisa Publication</p>
+                <p>CAD $<span>8.99</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- Children book mentioning history, meaning and virtues of BIBI Fatima
+                  tus Zahra a.s.This book explains why Fatima tus Zahra was named Fatima, who gave
+                  this name to her and what are the meaning of this beautiful name.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_04_Butt_05a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_04_Butt_05b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="catDiv04_item06" class="col-md-4 catDiv_item">
+          <div>
+            <img src="img/Categories/cat_04/cat_04_img_06.png" alt="Book Title Page" />
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">The Intelligent Boy</h3>
+                <h4><i class="fas fa-user-edit"></i> Molana Nabi R.Mir</h4>
+                <p>Publisher: Kisa Publication</p>
+                <p>CAD $<span>6.77</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- Children book mentioning virtues of Imam Hassan a.s. Imam Hassan was
+                  beautiful as well as intellectually outclass. This story about Imam Hassan is one
+                  such incidence of his intelligence written beautifully by Molana Nabi R.Mir.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_04_Butt_06a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_04_Butt_06b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CATEGORY 05 -->
+    <div id="catDiv05" class="container">
+      <div class="row">
+        <div id="catDiv05_item01" class="col-md-4 catDiv_item">
+          <div>
+            <img src="img/Categories/cat_05/cat05_img_01.png" alt="Book Title Page" />
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">Image Of Household Of Prophet</h3>
+                <h4><i class="fas fa-user-edit"></i> Muhammadi Rayshahri</h4>
+                <p>Publisher: Darul Hadith</p>
+                <p>CAD $<span>15</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- Beautiful description from Quranic verses and hadith about how
+                  household of prophet is the purest household. It also include sunni references
+                  which describe the status and virtues of Prophet's progeny.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_05_Butt_01a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_05_Butt_01b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="catDiv05_item02" class="col-md-4 catDiv_item">
+          <div>
+            <img src="img/Categories/cat_05/cat05_img_02.png" alt="Book Title Page" />
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">Encyclopedia of Imam Ali a.s</h3>
+                <h4><i class="fas fa-user-edit"></i> Muhammad Muhammadi Rayshahri</h4>
+                <p>Publisher: Darul Hadith</p>
+                <p>CAD $<span>15.89</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- A comprehensive Examination of the life , history and virtues of
+                  master of faithful Ali ibn Abi Talib a.s based on Islam's authoritative sources.
+                  Imam Ali's characterstics, Quranic Ayah about him, and his being Successor after
+                  Prophet is discussed.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_05_Butt_02a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_05_Butt_02b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="catDiv05_item03" class="col-md-4 catDiv_item">
+          <div>
+            <img src="img/Categories/cat_05/cat05_img_03.png" alt="Book Title Page" />
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">Gunahane Kabira Part1</h3>
+                <h4><i class="fas fa-user-edit"></i> Ayatullah Dastaghaib Sherazee</h4>
+                <p>Publisher: Ahlulbayt Publishers</p>
+                <p>CAD $<span>35</span></p>
+                <p>
+                  <i class="fas fa-book"></i>Islam. Description- Detail description of major sins in
+                  Islam, their consequences in here and in hereafter, repentance from them based on
+                  Hadith and Quranic versus. Abstaining from evil and doing good is one of the furu
+                  e deen of Shia
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_05_Butt_03a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_05_Butt_03b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="catDiv05_item04" class="col-md-4 catDiv_item">
+          <div>
+            <img src="img/Categories/cat_05/cat05_img_04.png" alt="Book Title Page" />
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">Gunahane Kabira Part2</h3>
+                <h4><i class="fas fa-user-edit"></i> Ayatullah Dastaghaib Sherazee</h4>
+                <p>Publisher: Ahlulbayt Publishers</p>
+                <p>CAD $<span>35</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- Detail description of major sins in Islam, their consequences in here
+                  and in hereafter, repentance from them based on Hadith and Quranic versus.
+                  Abstaining from evil and doing good is one of the furu e deen of Shia
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_05_Butt_04a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_05_Butt_04b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="catDiv05_item05" class="col-md-4 catDiv_item">
+          <div>
+            <img src="img/Categories/cat_05/cat05_img_05.png" alt="Book Title Page" />
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading">Gunahane Kabira Part3</h3>
+                <h4><i class="fas fa-user-edit"></i> Ayatullah Dastaghaib Sherazee</h4>
+                <p>Publisher: Ahlulbayt Publishers</p>
+                <p>CAD $<span>15</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- Detail description of major sins in Islam, their consequences in here
+                  and in hereafter, repentance from them based on Hadith and Quranic versus.
+                  Abstaining from evil and doing good is one of the furu e deen of Shia
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_05_Butt_05a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_05_Butt_05b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="catDiv05_item06" class="col-md-4 catDiv_item">
+          <div>
+            <img src="img/Categories/cat_05/cat05_img_06.png" alt="Book Title Page" />
+            <div class="underImage">
+              <div class="descDiv">
+                <h3 class="title_heading" id="dumy1">Rights of charter</h3>
+                <h4><i class="fas fa-user-edit"></i> Imam Zain ul Abideen a.s</h4>
+                <p>Publisher: Ahlulbayt Publishers</p>
+                <p>CAD $<span>14</span></p>
+                <p>
+                  <i class="fas fa-book"></i>
+                  Description- Imam Zain ul abideen has mentioned beautifully rights of different
+                  people, relation, of our self, neighbours, body parts etc. It is a collection of
+                  beautiful book by our forth Imam and no such compilation of rights of all
+                  discussed in such detail.
+                </p>
+              </div>
+              <div class="container-fluid buttonClass">
+                <div class="row">
+                  <button type="submit" id="cat_05_Butt_06a" class="col-sm-4 buttA">
+                    Add to Cart
+                  </button>
+                  <button type="submit" id="cat_05_Butt_06b" class="col-sm-4 buttB">
+                    Remove from Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECK-OUT PAGE -->
+    <div id="checkOut" class="container">
+      <div id="checkOut_01">
+        <h2>Check-Out Page</h2>
+        <br /><br />
+        <h4>List of Items</h4>
+        <br /><br /><br /><br /><br />
+
+        <div id="checkout_No_Items_Div">
+          <h3>No item is selected by YOU to checkout</h3>
+        </div>
+      </div>
+
+      <div id="checkout_With_Items_Div">
+        <div id="main_Items_Div"></div>
+
+        <br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br />
+
+        <button type="button" id="a_cal_price" class="btn btn-primary btn-lg">
+          Calculate Price
+        </button>
+
+        <div id="additionalPricing">
+          <div class="cal_total_div">
+            <div>
+              <h4>Before Tax</h4>
+              <h4>GST (13%)</h4>
+            </div>
+            <div id="calculation_Div">
+              <p id="before_tax"></p>
+              <p id="gst_"></p>
+            </div>
+          </div>
+
+          <br /><br /><br /><br /><br />
+
+          <div id="_total_div" class="cal_total_div">
+            <h3>Amount</h3>
+            <h3 id="final_amount">0</h3>
+          </div>
+        </div>
+
+        <br /><br /><br />
+
+        <button type="button" id="a_checkout" class="btn btn-primary btn-lg">Submit to Pay</button>
+      </div>
+    </div>
+
+    <footer id="specialFooter">
+      <div id="footer_div_01">
+        <p>&copy;2020 Created by Sammar Abbas</p>
+        <p>
+          <a href="#">
+            <i class="fab fa-facebook-f fa-2x"></i>
+          </a>
+
+          <a href="#">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+
+          <a href="#">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+
+          <a href="#">
+            <i class="fab fa-linkedin-in fa-2x"></i>
+          </a>
+        </p>
+      </div>
+
+      <div id="footer_div_02">
+        <form action="https://formspree.io/mvowynvz" method="POST" enctype="multipart/form-data">
+          <input type="email" name="_replyto" placeholder="Email Address" />
+          <br />
+          <button id="subscribe" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </footer>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
+</html>

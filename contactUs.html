@@ -1,0 +1,350 @@
+<!--
+   Name- Dure Shawar Abbas 
+   Studentid- 010109148 
+   email -dsnotapplicable@myseneca.ca 
+   Final Assignment
+   Link:    https://web222-final-assignment.dure-shawar-abbas.vercel.app/ 
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>WEB222 Store</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER AREA -->
+    <header id="headerDiv">
+      <div id="topOpt1">
+        <a href="#">Log In</a>
+        <a href="#">Sign Up</a>
+        <a href="#" id="contactUs">Contact Us</a>
+        <a href="index.html#" id="aboutUsC">About Us</a>
+      </div>
+
+      <a href="#" id="home"
+        ><h1 id="headerH1"><i class="fas fa-kaaba"></i> ISLAMIC HUB</h1></a
+      >
+    </header>
+
+    <!-- CATEGORIES BUTTON AREA -->
+    <nav id="nav">
+      <div id="returnhome">
+        <button type="button" id="a_cat00" class="btn btn-success btn-lg">
+          <a href="./index.html">Home</a>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Contact us form -->
+    <div id="contactUsForm">
+      <div class="container">
+        <span class="text-success"><h1>Contact Us</h1></span>
+        <span class="text-secondary"
+          ><p>
+            This is the quickest way you can reach to us for any questions, concern or problem.
+          </p></span
+        >
+        <form id="contactUs-form" action="https://httpbin.org/post" method="POST">
+          <div class="row">
+            <div class="col">
+              <label for="contactUs-first-name"><span class="text-danger">*</span>First name</label>
+              <input
+                class="form-control"
+                id="contactUs-first-name"
+                name="firstName"
+                autocomplete="given-name"
+                type="text"
+                autofocus
+                tabindex="1"
+                required
+              />
+            </div>
+
+            <div class="col">
+              <label for="contactUs-last-name"><span class="text-danger">*</span>Last name</label>
+              <input
+                class="form-control"
+                id="contactUs-last-name"
+                name="LastName"
+                autocomplete="cc-family-name"
+                type="text"
+                tabindex="2"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="row mb-3 mt-2">
+            <div class="col">
+              <label for="contactUs-email"><span class="text-danger">*</span>Email</label>
+              <input
+                class="form-control mt-2"
+                id="contactUs-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="anonymous@somewhere.com"
+                tabindex="3"
+                required
+              />
+            </div>
+
+            <div class="col">
+              <label for="contactUs-">Phone</label>
+              <input
+                class="form-control"
+                id="contactUs-Phone"
+                name="phone"
+                type="tel"
+                autocomplete="tel"
+                tabindex="4"
+              />
+            </div>
+          </div>
+
+          <div class="col-form mb-2">
+            <label for="contactUs-address"><span class="text-danger">*</span>Address</label>
+            <input
+              id="contactUs-address"
+              class="form-control"
+              name="address"
+              type="text"
+              tabindex="5"
+              required
+            />
+          </div>
+
+          <div class="row mb-2">
+            <div class="col form-group">
+              <label for="contactUs-city"><span class="text-danger">*</span>City</label>
+              <input
+                id="contactUs-city"
+                class="form-control"
+                name="city"
+                list="contactUs-cities"
+                type="text"
+                tabindex="6"
+                required
+              />
+
+              <datalist id="contactUs-cities">
+                <option value="Toronto"></option>
+                <option value="Vancouver"></option>
+                <option value="Montreal"></option>
+                <option value="Niagara Falls"></option>
+                <option value="Victoria"></option>
+                <option value="Halifax"></option>
+                <option value="Quebec"></option>
+                <option value="Calgary"></option>
+                <option value="Winnipeg"></option>
+                <option value="Edmonton"></option>
+                <option value="Regina"></option>
+                <option value="Vaughan"></option>
+                <option value="Hamilton"></option>
+                <option value="Guelph"></option>
+                <option value="Richmond Hill"></option>
+              </datalist>
+            </div>
+
+            <div class="col form-group">
+              <label for="contactUs-postal"><span class="text-danger">*</span>Postal Code</label>
+              <input
+                id="contactUs-postalCode"
+                class="form-control"
+                name="postalCode"
+                placeholder="M1W 3G4"
+                tabindex="7"
+                pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$"
+                required
+              />
+
+              <div class="invalid-feedback">
+                Enter in correct form example M1W3G4
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-2">
+            <div class="col form-group">
+              <label class="mr-3"><span class="text-danger">*</span>What is it about:</label>
+              <div class="form-check form-check-inline">
+                <input
+                  onclick="orderNumberHide()"
+                  id="option-question"
+                  class="form-check-input"
+                  type="radio"
+                  name="whatAbout"
+                  value="question"
+                  tabindex="8"
+                  checked
+                  required
+                />
+
+                <label class="form-check-label" for="option-question">Question</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                  id="option-concern"
+                  class="form-check-input"
+                  type="radio"
+                  name="whatAbout"
+                  value="concern"
+                  tabindex="9"
+                  onclick="orderNumberHide()"
+                  ;
+                />
+
+                <label class="form-check-label" for="option-concern">Concern</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                  id="option-orderProblem"
+                  class="form-check-input"
+                  type="radio"
+                  name="whatAbout"
+                  value="Order-Problem"
+                  tabindex="10"
+                  onclick="orderNumberDisplay()"
+                  ;
+                />
+
+                <label class="form-check-label" for="option-orderProblem">Order Problem</label>
+              </div>
+
+              <div class="col">
+                <input
+                  id="order-number"
+                  class="form-group w-25"
+                  name="OrderNumber"
+                  type="text"
+                  style="display: none;"
+                  placeholder="Enter your Order Number here"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+
+          <textarea
+            id="contactUs-message"
+            class="form-control"
+            name="message"
+            rows="10"
+            tabindex="11"
+            placeholder="Describe your problem here"
+            required
+          >
+          </textarea>
+
+          <input
+            id="IH"
+            class="form-control"
+            name="Myname"
+            value="Dure"
+            type="hidden"
+            tabindex="12"
+          />
+
+          <div class="d-flex flex-row-reverse mt-3 mb-4 bd-highlight">
+            <input
+              class="btn btn-success"
+              type="submit"
+              name="submit"
+              value="Submit"
+              tabindex="13"
+              required
+            />
+
+            <input
+              class="btn btn-info mr-4 "
+              type="reset"
+              name="reset"
+              value="Reset"
+              tabindex="14"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer id="specialFooter">
+      <div id="footer_div_01">
+        <p>&copy;2020 Created by Dure Shawar Abbas</p>
+        <p>
+          <a href="#">
+            <i class="fab fa-facebook-f fa-2x"></i>
+          </a>
+
+          <a href="#">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+
+          <a href="#">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+
+          <a href="#">
+            <i class="fab fa-linkedin-in fa-2x"></i>
+          </a>
+        </p>
+      </div>
+
+      <div id="footer_div_02">
+        <form action="https://formspree.io/mvowynvz" method="POST" enctype="multipart/form-data">
+          <input type="text" name="_replyto" placeholder="Email Address" />
+          <br />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </footer>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="scriptC.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
+</html>
