@@ -548,9 +548,9 @@ let display_cat_06 = () => {
       _plus_button.setAttribute('class', '_plus_button');
       _plus_button.setAttribute('type', 'button');
       _plus_button.setAttribute('value', '+');
-      _span_Item_Quantity.appendChild(_minus_button);
+      
       _span_Item_Quantity.appendChild(_input);
-      _span_Item_Quantity.appendChild(_plus_button);
+
       _div.appendChild(_span_Item_Quantity);
       main_Items_Div.appendChild(_div);
 
@@ -578,9 +578,7 @@ let display_cat_06 = () => {
       _div.appendChild(_span_Total_Per_Item);
       main_Items_Div.appendChild(_div);
 
-      _span_Cancel.innerHTML = 'X';
-      _div.appendChild(_span_Cancel);
-      main_Items_Div.appendChild(_div);
+      
     }
 
     ///////////// Quantity Values by USER //////////
