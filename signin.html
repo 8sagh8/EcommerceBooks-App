@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>SignIn Page</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div style="height: 90vh;">
+      <!-- HEADER AREA -->
+      <header id="headerDiv">
+        <div id="topOpt1">
+          <a href="./index.html">Home</a>
+          <a href="./contactUs.html" id="contactUs">Contact Us</a>
+          <a href="index.html#" id="aboutUs">About Us</a>
+        </div>
+
+        <a href="#" id="home"
+          ><h1 id="headerH1" style="font-size: 5rem;"><i class="fas fa-kaaba"></i> ISLAMIC HUB</h1></a
+        >
+      </header>
+
+      <!-- CATEGORIES BUTTON AREA -->
+      <nav id="nav">
+        <div>
+          <button type="button" id="a_cat00" class="btn btn-secondary btn-lg">Home</button>
+        </div>
+        <div id="navDiv">
+          <button type="button" id="a_cat01" class="btn btn-primary btn-lg">Quran And Hadith</button>
+          <button type="button" id="a_cat02" class="btn btn-primary btn-lg">Islamic Ethics</button>
+          <button type="button" id="a_cat03" class="btn btn-primary btn-lg">14 Infalliables</button>
+          <button type="button" id="a_cat04" class="btn btn-primary btn-lg">Kids Section</button>
+          <button type="button" id="a_cat05" class="btn btn-primary btn-lg">General</button>
+        </div>
+        <div>
+          <button type="button" id="a_cat06" class="btn btn-secondary btn-lg">
+            Check-Out -- Item: <span id="itemValue"></span>
+          </button>
+        </div>
+      </nav>
+
+      <!--    -->
+      <div style="text-align: center;">
+        <br />
+        <h2> SignIn Page </h2>
+        <br />
+        <form action="./index.html">
+          <div class="form-group" style="padding: 0rem 40rem;">
+            <input type="email" class="form-control" placeholder="Enter username" id="email">
+          </div>
+          <div class="form-group" style="padding: 0rem 40rem;">
+            <span>
+              <input type="password" class="form-control"
+              style="display: inline-block" placeholder="Enter password" id="pwd">
+            </span>
+            
+            <i class="fas fa-eye fa-1x" id = "passwordEYE"></i>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!--    -->
+
+    <footer id="specialFooter">
+      <div id="footer_div_01">
+        <p>&copy;2020 Created by Sammar Abbas</p>
+        <p>
+          <a href="#">
+            <i class="fab fa-facebook-f fa-2x"></i>
+          </a>
+
+          <a href="#">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+
+          <a href="#">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+
+          <a href="#">
+            <i class="fab fa-linkedin-in fa-2x"></i>
+          </a>
+        </p>
+      </div>
+
+      <div id="footer_div_02">
+        <form action="https://formspree.io/mvowynvz" method="POST" enctype="multipart/form-data">
+          <input type="email" name="_replyto" placeholder="Email Address" />
+          <br />
+          <button id="subscribe" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!-- JQUERY STUFF -->
+    <script>
+      $(document).ready(function(){
+        $("#passwordEYE").click(function(){
+          if($("#pwd").attr("type") == "password"){
+            $("#pwd").attr("type", "text");
+          }
+          else{
+            $("#pwd").attr("type", "password");
+          }
+        });
+
+      });
+      
+
+    </script>
+    
+    
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
+</html>
